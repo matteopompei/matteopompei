@@ -1,4 +1,4 @@
-## A regà bongiorno! 👋🏻
+## Hello world! 👋🏻
 
 > Reality has limits, stupidity doesn't.
 
