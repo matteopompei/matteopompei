@@ -1,4 +1,4 @@
-[Matteo Pompei](https://i.imgur.com/f89kGgj.png)
+![Matteo Pompei](https://i.imgur.com/f89kGgj.png)
 
 > Reality has limits, stupidity doesn't.
 
