@@ -1,0 +1,51 @@
+@font-face {
+	font-family: "Source Sans 3";
+	src: url("../fonts/SourceSans3.woff2") format("woff2-variations");
+	font-weight: 200 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Source Sans 3";
+	src: url("../fonts/SourceSans3-Italic.woff2") format("woff2-variations");
+	font-weight: 200 900;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Space Grotesk";
+	src: url("../fonts/SpaceGrotesk.woff2") format("woff2-variations");
+	font-weight: 300 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "JetBrains Mono";
+	src: url("../fonts/JetBrainsMono.woff2") format("woff2-variations");
+	font-weight: 100 800;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "JetBrains Mono";
+	src: url("../fonts/JetBrainsMono-Italic.woff2") format("woff2-variations");
+	font-weight: 100 800;
+	font-style: italic;
+	font-display: swap;
+}
+
+:root {
+	--font-sans: "Source Sans 3", sans-serif;
+	--font-display: "Space Grotesk", sans-serif;
+	--font-mono: "JetBrains Mono", monospace;
+}
+
+body {
+	font-family: var(--font-sans);
+	background-color: black;
+	color: white;
+}
