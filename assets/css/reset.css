@@ -1,11 +1,24 @@
+/* =========================================
+									CSS RESET
+   ========================================= */
+
+/* Reset di base */
 *,
 *::before,
 *::after {
 	box-sizing: border-box;
+	overflow-wrap: break-word;
 }
 
-body {
+:where(body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd) {
 	margin: 0;
+}
+
+/* Tipografia */
+html {
+	-moz-text-size-adjust: none;
+	-webkit-text-size-adjust: none;
+	text-size-adjust: none;
 }
 
 body {
@@ -17,23 +30,38 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 
-:where(img, picture, svg, video, canvas) {
-	display: block;
-	max-width: 100%;
+:where(h1, h2, h3, h4, h5, h6) {
+	text-wrap: balance;
 }
 
+:where(ul, ol)[class] {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+/* Moduli */
 :where(input, button, textarea, select) {
 	font: inherit;
 }
 
-:where(h1, h2, h3, h4, h5, h6) {
-	text-wrap: balance;
-}
-:where(p, h1, h2, h3, h4, h5, h6) {
-	overflow-wrap: break-word;
+textarea {
+	resize: vertical;
 }
 
+/* Media fluidi e gestione aspect-ratio */
+:where(img, picture, svg, video, canvas) {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+/* Accessibilità, animazioni rimosse */
 @media (prefers-reduced-motion: reduce) {
+	html:focus-within {
+		scroll-behavior: auto;
+	}
+
 	*,
 	*::before,
 	*::after {
