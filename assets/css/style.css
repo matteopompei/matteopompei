@@ -49,3 +49,18 @@ body {
 	background-color: black;
 	color: white;
 }
+
+#background-video {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -1000;
+	object-fit: cover;
+	background-size: cover;
+	filter: blur(70px) saturate(350%) hue-rotate(330deg);
+	transform: scale(2);
+}
