@@ -1,3 +1,5 @@
+/* Font importati */
+
 @font-face {
 	font-family: "Source Sans 3";
 	src: url("../fonts/SourceSans3.woff2") format("woff2-variations");
@@ -38,16 +40,57 @@
 	font-display: swap;
 }
 
+/* Dichiarazione variabili  */
+
 :root {
 	--font-sans: "Source Sans 3", sans-serif;
 	--font-display: "Space Grotesk", sans-serif;
 	--font-mono: "JetBrains Mono", monospace;
+
+	--fw-light: 300;
+	--fw-regular: 400;
+	--fw-medium: 500;
+	--fw-semibold: 600;
+	--fw-bold: 700;
+	--fw-black: 900;
+
+	--fs-sm: clamp(0.8rem, 0.17vw + 0.76rem, 0.9rem);
+	--fs-base: clamp(1rem, 0.34vw + 0.91rem, 1.125rem);
+	--fs-md: clamp(1.25rem, 0.61vw + 1.1rem, 1.5rem);
+	--fs-lg: clamp(1.56rem, 1vw + 1.31rem, 2rem);
+	--fs-xl: clamp(1.95rem, 1.56vw + 1.56rem, 3rem);
+	--fs-2xl: clamp(2.44rem, 2.38vw + 1.85rem, 4.5rem);
+	--fs-3xl: clamp(3.05rem, 3.54vw + 2.17rem, 6rem);
 }
 
 body {
 	font-family: var(--font-sans);
+	font-weight: var(--fw-regular);
+	font-size: var(--fs-base);
 	background-color: black;
 	color: white;
+}
+
+:is(h1, h2, h3) {
+	font-family: var(--font-display);
+	font-weight: var(--fw-bold);
+	letter-spacing: -0.08em;
+}
+
+h1 {
+	font-size: var(--fs-2xl);
+}
+
+h2 {
+	font-size: var(--fs-xl);
+}
+
+h3 {
+	font-size: var(--fs-lg);
+}
+
+code {
+	font-family: var(--font-mono);
 }
 
 #background-video {
