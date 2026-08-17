@@ -43,9 +43,4 @@ I am actively training to become a full-stack developer, combining my hands-on I
 
 - **Website**: [matteopompei.com](https://matteopompei.com)
 - **LinkedIn**: [linkedin.com/in/matteopompei](https://linkedin.com/in/matteopompei)
-- **Email**: [pompeimatteojobs@gmail.com](mailto:pompeimatteojobs@gmail.com)
-
----
-
-*I like building things that work and solve real-world problems.*  
-*If you want to chat about code, IT infrastructure, or just say hi, feel free to reach out!*
+- **Email**: [lavoro@matteopompei.com](mailto:lavoro@matteopompei.com)
